@@ -198,6 +198,12 @@ button, input, textarea {
   border-color: rgba(0,0,0,0.08);
 }
 
+.btn-icon svg {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
 .hero-highlights {
   display: grid;
   gap: 0.9rem;
@@ -438,16 +444,6 @@ button, input, textarea {
   flex-wrap: wrap;
 }
 
-.whatsapp-float {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  background: #25d366;
-  color: white;
-  padding: 1rem 1.2rem;
-  border-radius: 999px;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
-  z-index: 40;
   font-weight: 700;
 }
 
