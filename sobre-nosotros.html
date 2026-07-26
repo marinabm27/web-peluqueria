@@ -24,17 +24,24 @@
     </svg>
   </a>
   <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img class="header-logo" src="assets/images/hero.jpg" alt="Prótesis capilar Torremolinos" loading="lazy">
-        <p class="eyebrow">Prótesis capilar Torremolinos</p>
+    <div class="container">
+      <div class="header-inner">
+        <div class="brand">
+          <img class="header-logo" src="assets/images/hero.jpg" alt="Prótesis capilar Torremolinos" loading="lazy">
+          <span class="eyebrow">Prótesis capilar Torremolinos</span>
+        </div>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" id="site-nav" aria-label="Menú principal">
+          <a href="servicios.html">Servicios</a>
+          <a href="sobre-nosotros.html">Sobre nosotros</a>
+          <a href="protesis-capilares.html">Prótesis capilares</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
       </div>
-      <nav class="main-nav" aria-label="Menú principal">
-        <a href="servicios.html">Servicios</a>
-        <a href="sobre-nosotros.html">Sobre nosotros</a>
-        <a href="protesis-capilares.html">Prótesis capilares</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
     </div>
   </header>
 
@@ -52,7 +59,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="container">
         <header class="section-header">
           <p class="eyebrow">Nuestra filosofía</p>
@@ -60,19 +67,19 @@
           <p>Somos un centro de confianza en Torremolinos para clientes que buscan una solución capilar profesional y personalizada.</p>
         </header>
         <div class="feature-grid">
-          <article>
+          <article class="reveal">
             <h3>Atención humana</h3>
             <p>Entendemos lo delicado del proceso para quien sufre alopecia. Acompañamos cada paso con empatía.</p>
           </article>
-          <article>
+          <article class="reveal">
             <h3>Profesionales cualificados</h3>
             <p>Nuestro equipo está formado en prótesis capilar, adaptaciones y mantenimiento estético.</p>
           </article>
-          <article>
+          <article class="reveal">
             <h3>Materiales de calidad</h3>
             <p>Trabajamos con prótesis capilar de última generación para un acabado natural y duradero.</p>
           </article>
-          <article>
+          <article class="reveal">
             <h3>Compromiso local</h3>
             <p>Somos un centro en Torremolinos con enfoque local y atención permanente para la comunidad.</p>
           </article>
@@ -83,11 +90,16 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Centro de Prótesis Capilar Torremolinos</p>
+      <div>
+        <p>© 2026 Centro de Prótesis Capilar Torremolinos</p>
+        <p>Calle principal 1, 29620 Torremolinos · <a href="tel:+34699349252">+34 699 349 252</a></p>
+      </div>
       <nav aria-label="Enlaces de pie de página">
         <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
+        <a href="sobre-nosotros.html">Sobre nosotros</a>
         <a href="protesis-capilares.html">Prótesis capilares</a>
+        <a href="contacto.html">Contacto</a>
       </nav>
     </div>
   </footer>
