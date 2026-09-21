@@ -12,6 +12,10 @@
   --color-accent: hsl(36, 40%, 70%);
   --color-border: hsl(36, 25%, 82%);
   --color-white: hsl(0, 0%, 100%);
+  --color-chrome: hsl(36, 27%, 46%);
+  --color-chrome-border: hsl(36, 27%, 38%);
+  --color-footer: hsl(36, 27%, 85%);
+  --color-footer-border: hsl(36, 27%, 74%);
 
   /* Tipografía */
   --ff-base: 'Outfit', sans-serif;
@@ -135,8 +139,8 @@ button, input, textarea {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: var(--color-white);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-chrome);
+  border-bottom: 1px solid var(--color-chrome-border);
   backdrop-filter: blur(14px);
 }
 
@@ -167,7 +171,7 @@ button, input, textarea {
 .brand .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: var(--color-accent);
+  color: var(--color-white);
   font-weight: 700;
   font-size: 0.75rem;
   margin: 0;
@@ -187,7 +191,7 @@ button, input, textarea {
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--color-text);
+  background: var(--color-white);
   border-radius: 2px;
 }
 
@@ -205,13 +209,13 @@ button, input, textarea {
 .main-nav a {
   display: block;
   padding: var(--space-3) 0;
-  color: var(--color-text-muted);
+  color: var(--color-white);
   font-weight: 500;
 }
 
 .main-nav a:hover,
 .main-nav a[aria-current="page"] {
-  color: var(--color-text);
+  color: var(--color-white);
 }
 
 .main-nav a[aria-current="page"] {
@@ -518,9 +522,9 @@ button, input, textarea {
 }
 
 .site-footer {
-  background: var(--color-white);
+  background: var(--color-footer);
   padding: var(--space-6) 0;
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-footer-border);
 }
 
 .footer-inner {
@@ -533,7 +537,7 @@ button, input, textarea {
 
 .site-footer p {
   margin: 0;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   font-size: var(--fs-sm);
 }
 
@@ -544,13 +548,13 @@ button, input, textarea {
 }
 
 .site-footer a {
-  color: var(--color-text-muted);
+  color: var(--color-text);
   font-size: var(--fs-sm);
   font-weight: 500;
 }
 
 .site-footer a:hover {
-  color: var(--color-text);
+  text-decoration: underline;
 }
 
 @media (min-width: 768px) {
@@ -696,7 +700,7 @@ mark.pendiente {
 
 .footer-legal nav {
   padding-top: var(--space-4);
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-footer-border);
 }
 
 .contact-form .form-check {
@@ -715,4 +719,46 @@ mark.pendiente {
 
 .contact-form .form-check a {
   text-decoration: underline;
+}
+
+/* Galería */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+
+.galeria-grid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.galeria-grid:not(:empty) + .galeria-empty {
+  display: none;
+}
+
+.galeria-empty {
+  margin-top: var(--space-6);
+  padding: var(--space-7) var(--space-5);
+  text-align: center;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+/* Hero de inicio: imagen entera visible nada más entrar */
+.hero--home {
+  padding: var(--space-5) 0 var(--space-7);
+}
+
+.hero--home .hero-visual img {
+  display: block;
+  width: min(100%, calc(100svh - 6rem));
+  height: auto;
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
 }
