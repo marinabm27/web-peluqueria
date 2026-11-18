@@ -2,8 +2,8 @@
 
 Última actualización: 18/11/2026
 
-> ✅ **Subido a GitHub el 18/11/2026** (dominio ya comprado, pendiente de activarse en DNS).
-> Mientras el dominio no funcione, la web sigue accesible en `web-peluqueria-eta.vercel.app`.
+> ✅ **En producción desde el 18/11/2026** en https://www.carmenieveshairstudio.com
+> (la versión sin www y http redirigen con 308). Solo falta el NIF.
 
 ## ✅ Hecho
 
@@ -28,16 +28,5 @@ Datos ya puestos en las páginas legales: titular, nombre comercial, domicilio, 
 
 1. [x] **Comprar `carmenieveshairstudio.com`** a nombre de la titular (el `.es` no estaba disponible).
 2. [ ] **Poner el NIF** (ver arriba).
-3. [ ] **Conectar el dominio en Vercel**: proyecto → *Settings → Domains → Add* (en la cuenta donde está el proyecto, que no es la del equipo de josihttp). Configurar en el registrador los DNS que indique Vercel.
-   - Añadir también `www.carmenieveshairstudio.com` con redirección al dominio sin www.
-   - Redirigir `web-peluqueria-eta.vercel.app` al dominio nuevo.
-4. [x] **Commit + push** a los dos remotos (`origin` y `jositobarbo`, rama `main`). No incluir `spec/cambios.md` salvo que se quiera.
-5. [ ] **Verificar en producción**: la web carga por https en el dominio, la dirección antigua de Vercel redirige, el mapa y la galería funcionan.
-6. [ ] **Google Search Console**: dar de alta el dominio y enviar `https://www.carmenieveshairstudio.com/sitemap.xml`.
-7. [ ] **Google Business Profile** (ficha de Maps): poner la URL de la web.
-
-## Notas
-
-- Las páginas legales siguen con `noindex` (es lo normal). La galería ya es indexable y está en el sitemap.
-- Si en el futuro se añade Google Analytics, formularios o un sistema de citas, hay que actualizar la política de privacidad y la de cookies, e instalar un banner de consentimiento.
-- Siguiente idea para la galería: las 7 fotos `WhatsApp Image 2026-11-11*` (en `../imagenes`) parecen resultados de moldeador → añadirlas como «resultado» en la sección Moldeador.
+3. [x] **Dominio conectado en Vercel** (comprado en Vercel, mismo equipo que el proyecto). Principal: `www.carmenieveshairstudio.com`; `carmenieveshairstudio.com` redirige a www.
+   - Opcional: redirigir también `web-peluqueria-eta.vercel.app` al dominio (Settings → Domains → Edit). No es imprescindible: el canonical ya apunta al dominio.
