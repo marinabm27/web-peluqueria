@@ -12,7 +12,7 @@
 | Fuentes autoalojadas (Outfit y Playfair Display, woff2 variables, 106 KB). Sin conexiones a Google Fonts | `assets/fonts/`, `@font-face` al inicio de `assets/css/styles.css`, `<link rel="preload">` en todas las páginas |
 | Mapa de Contacto bajo petición: tarjeta con «Ver mapa aquí» + «Abrir en Google Maps». No carga Google hasta pulsar | `contacto.html`, `.map-consent` en CSS, `initMapConsent()` en `assets/js/main.js` |
 | Páginas legales simplificadas con datos de la titular (web sin cookies, sin banner) | `aviso-legal.html`, `politica-privacidad.html`, `politica-cookies.html` |
-| Dominio `https://carmenieveshairstudio.com` en canonical, og:, twitter:, JSON-LD, sitemap y robots (43 referencias) | todos los `.html`, `sitemap.xml`, `robots.txt` |
+| Dominio `https://www.carmenieveshairstudio.com` en canonical, og:, twitter:, JSON-LD, sitemap y robots (43 referencias) | todos los `.html`, `sitemap.xml`, `robots.txt` |
 
 Datos ya puestos en las páginas legales: titular, nombre comercial, domicilio, email, teléfono, dominio y actividad.
 
@@ -33,7 +33,7 @@ Datos ya puestos en las páginas legales: titular, nombre comercial, domicilio, 
    - Redirigir `web-peluqueria-eta.vercel.app` al dominio nuevo.
 4. [x] **Commit + push** a los dos remotos (`origin` y `jositobarbo`, rama `main`). No incluir `spec/cambios.md` salvo que se quiera.
 5. [ ] **Verificar en producción**: la web carga por https en el dominio, la dirección antigua de Vercel redirige, el mapa y la galería funcionan.
-6. [ ] **Google Search Console**: dar de alta el dominio y enviar `https://carmenieveshairstudio.com/sitemap.xml`.
+6. [ ] **Google Search Console**: dar de alta el dominio y enviar `https://www.carmenieveshairstudio.com/sitemap.xml`.
 7. [ ] **Google Business Profile** (ficha de Maps): poner la URL de la web.
 
 ## Notas
