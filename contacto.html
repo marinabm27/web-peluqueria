@@ -5,25 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto | CarmeNieves Hair Studio Torremolinos</title>
   <meta name="description" content="Contacto para el centro de prótesis capilar en Torremolinos. Pide tu consulta por teléfono o WhatsApp.">
-  <link rel="canonical" href="https://web-peluqueria-eta.vercel.app/contacto.html">
+  <link rel="canonical" href="https://carmenieveshairstudio.es/contacto.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contacto | CarmeNieves Hair Studio Torremolinos">
   <meta property="og:description" content="Contacto para el centro de prótesis capilar en Torremolinos. Pide tu consulta por teléfono o WhatsApp.">
-  <meta property="og:url" content="https://web-peluqueria-eta.vercel.app/contacto.html">
+  <meta property="og:url" content="https://carmenieveshairstudio.es/contacto.html">
   <meta property="og:site_name" content="CarmeNieves Hair Studio">
-  <meta property="og:image" content="https://web-peluqueria-eta.vercel.app/assets/images/hero.jpg">
+  <meta property="og:image" content="https://carmenieveshairstudio.es/assets/images/hero.jpg">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contacto | CarmeNieves Hair Studio Torremolinos">
   <meta name="twitter:description" content="Contacto para el centro de prótesis capilar en Torremolinos. Pide tu consulta por teléfono o WhatsApp.">
-  <meta name="twitter:image" content="https://web-peluqueria-eta.vercel.app/assets/images/hero.jpg">
+  <meta name="twitter:image" content="https://carmenieveshairstudio.es/assets/images/hero.jpg">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/playfair-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -92,8 +91,17 @@
         </div>
       </div>
     </section>
-    <section class="map-wrapper">
-      <iframe loading="lazy" src="https://www.google.com/maps?q=CarmeNieves+Hair+Studio,+C.+Casablanca+20,+29620+Torremolinos&amp;output=embed" title="Mapa: CarmeNieves Hair Studio en C. Casablanca, 20, Torremolinos" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="map-wrapper" aria-label="Mapa de ubicación">
+      <!-- El mapa de Google solo se carga si la persona lo pide: así la web no instala cookies de terceros -->
+      <div class="map-consent" data-map-src="https://www.google.com/maps?q=CarmeNieves+Hair+Studio,+C.+Casablanca+20,+29620+Torremolinos&amp;output=embed" data-map-title="Mapa: CarmeNieves Hair Studio en C. Casablanca, 20, Torremolinos">
+        <svg class="map-consent__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        <p class="map-consent__address"><strong>C. Casablanca, 20</strong><br>29620 Torremolinos (Málaga)</p>
+        <div class="map-consent__actions">
+          <button type="button" class="btn btn--primary map-consent__load">Ver mapa aquí</button>
+          <a class="btn btn--secondary" href="https://www.google.com/maps/search/?api=1&amp;query=CarmeNieves+Hair+Studio+C.+Casablanca+20+Torremolinos" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+        </div>
+        <p class="map-consent__note">Al cargar el mapa, Google puede instalar cookies en tu navegador. Más información en la <a href="politica-cookies.html">política de cookies</a>.</p>
+      </div>
     </section>
   </main>
 

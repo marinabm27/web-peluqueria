@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initGaleriaTabs()
   initBeforeAfter()
   initLightbox()
+  initMapConsent()
 })
 
 function initScrollReveal () {
@@ -282,5 +283,22 @@ function initLightbox () {
     var dx = e.changedTouches[0].clientX - startX
     if (Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1))
     startX = null
+  })
+}
+
+/* ---------- Contacto: mapa de Google bajo petición (sin cookies hasta que se pulsa) ---------- */
+function initMapConsent () {
+  var box = document.querySelector('.map-consent')
+  if (!box) return
+  var btn = box.querySelector('.map-consent__load')
+  if (!btn) return
+
+  btn.addEventListener('click', function () {
+    var iframe = document.createElement('iframe')
+    iframe.src = box.getAttribute('data-map-src')
+    iframe.title = box.getAttribute('data-map-title') || 'Mapa'
+    iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade')
+    iframe.setAttribute('allowfullscreen', '')
+    box.parentNode.replaceChild(iframe, box)
   })
 }
