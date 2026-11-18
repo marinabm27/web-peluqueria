@@ -34,7 +34,7 @@ Datos ya puestos en las páginas legales: titular, nombre comercial, domicilio, 
 5. [x] **Verificar en producción**: todas las páginas, vídeo, fotos, fuentes, sitemap y robots responden 200 por https; sin www y http redirigen a www (308).
 6. [ ] **Google Search Console**
    - [x] Dominio verificado el 18/11/2026 con registro TXT en los DNS de Vercel. **No borrar ese registro TXT** o se pierde la verificación.
-   - [ ] Enviar el sitemap: `https://www.carmenieveshairstudio.com/sitemap.xml` (menú *Sitemaps*).
+   - [x] Sitemap enviado el 18/11/2026: estado «Correcto», 6 páginas descubiertas.
    - [ ] Opcional: *Inspección de URLs* → `https://www.carmenieveshairstudio.com/` → *Solicitar indexación*.
 7. [ ] **Google Business Profile** (ficha de Maps): poner la URL de la web.
 
