@@ -12,7 +12,7 @@
 | Fuentes autoalojadas (Outfit y Playfair Display, woff2 variables, 106 KB). Sin conexiones a Google Fonts | `assets/fonts/`, `@font-face` al inicio de `assets/css/styles.css`, `<link rel="preload">` en todas las páginas |
 | Mapa de Contacto bajo petición: tarjeta con «Ver mapa aquí» + «Abrir en Google Maps». No carga Google hasta pulsar | `contacto.html`, `.map-consent` en CSS, `initMapConsent()` en `assets/js/main.js` |
 | Páginas legales simplificadas con datos de la titular (web sin cookies, sin banner) | `aviso-legal.html`, `politica-privacidad.html`, `politica-cookies.html` |
-| Dominio `https://carmenieveshairstudio.es` en canonical, og:, twitter:, JSON-LD, sitemap y robots (43 referencias) | todos los `.html`, `sitemap.xml`, `robots.txt` |
+| Dominio `https://carmenieveshairstudio.com` en canonical, og:, twitter:, JSON-LD, sitemap y robots (43 referencias) | todos los `.html`, `sitemap.xml`, `robots.txt` |
 
 Datos ya puestos en las páginas legales: titular, nombre comercial, domicilio, email, teléfono, dominio y actividad.
 
@@ -26,14 +26,14 @@ Datos ya puestos en las páginas legales: titular, nombre comercial, domicilio, 
 
 ## 📋 Pasos para publicar (en este orden)
 
-1. [x] **Comprar `carmenieveshairstudio.es`** a nombre de la titular (DonDominio, Arsys, IONOS… o Vercel si la cuenta del proyecto vende `.es`).
+1. [x] **Comprar `carmenieveshairstudio.com`** a nombre de la titular (el `.es` no estaba disponible).
 2. [ ] **Poner el NIF** (ver arriba).
 3. [ ] **Conectar el dominio en Vercel**: proyecto → *Settings → Domains → Add* (en la cuenta donde está el proyecto, que no es la del equipo de josihttp). Configurar en el registrador los DNS que indique Vercel.
-   - Añadir también `www.carmenieveshairstudio.es` con redirección al dominio sin www.
+   - Añadir también `www.carmenieveshairstudio.com` con redirección al dominio sin www.
    - Redirigir `web-peluqueria-eta.vercel.app` al dominio nuevo.
 4. [x] **Commit + push** a los dos remotos (`origin` y `jositobarbo`, rama `main`). No incluir `spec/cambios.md` salvo que se quiera.
 5. [ ] **Verificar en producción**: la web carga por https en el dominio, la dirección antigua de Vercel redirige, el mapa y la galería funcionan.
-6. [ ] **Google Search Console**: dar de alta el dominio y enviar `https://carmenieveshairstudio.es/sitemap.xml`.
+6. [ ] **Google Search Console**: dar de alta el dominio y enviar `https://carmenieveshairstudio.com/sitemap.xml`.
 7. [ ] **Google Business Profile** (ficha de Maps): poner la URL de la web.
 
 ## Notas
