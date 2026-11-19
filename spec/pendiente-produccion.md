@@ -36,7 +36,7 @@ Datos ya puestos en las páginas legales: titular, nombre comercial, domicilio, 
    - [x] Dominio verificado el 18/11/2026 con registro TXT en los DNS de Vercel. **No borrar ese registro TXT** o se pierde la verificación.
    - [x] Sitemap enviado el 18/11/2026: estado «Correcto», 6 páginas descubiertas.
    - [ ] Opcional: *Inspección de URLs* → `https://www.carmenieveshairstudio.com/` → *Solicitar indexación*.
-7. [ ] **Google Business Profile** (ficha de Maps): poner la URL de la web.
+7. [ ] **Google Business Profile** (ficha de Maps): lo hace Carmen desde su cuenta → Sitio web: `https://www.carmenieveshairstudio.com`. Recomendado: cambiar también el teléfono de la ficha (952 37 51 23) por el 699 349 252 para que coincida con la web.
 
 ## Notas
 
